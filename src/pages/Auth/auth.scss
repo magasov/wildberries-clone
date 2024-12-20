@@ -3,7 +3,7 @@
     align-items: center;
     justify-content: center;
     background: #F6F6F9;
-    height: calc(100vh - 440px);
+    padding: 65px;
 
     &__container {
         border-radius: 20px;
@@ -57,24 +57,45 @@
             cursor: pointer;
         }
 
-        p {
-            font-size: 14px;
-            color: #242424;
-            line-height: 20px;
-            cursor: pointer;
+        div {
+            display: flex;
+            justify-content: space-between;
+            position: relative;
 
-            svg {
-                font-size: 15px;
-                color: #a73afd;
+            
+            p {
+                font-size: 14px;
+                color: #242424;
+                line-height: 20px;
+                cursor: pointer;
+    
+                svg {
+                    font-size: 15px;
+                    color: #a73afd;
+                }
+    
+                span {
+                    color: #868695;
+                    cursor: default;
+                }
+    
+                &:hover {
+                    color: #A73AFD;
+                }
+                
             }
 
-            span {
-                color: #868695;
-                cursor: default;
-            }
+            .isRegister {
+                position: absolute;
+                font-size: 14px;
+                flex-wrap: nowrap;
+                right: 90px;
+                bottom: 0;
+                cursor: pointer;
 
-            &:hover {
-                color: #A73AFD;
+                &:hover {
+                    color: #A73AFD;
+                }
             }
         }
     }

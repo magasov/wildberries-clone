@@ -1,20 +1,28 @@
-import "./auth.scss";
+import React from "react";
 
+import "./auth.scss";
 import CheckIcon from "@mui/icons-material/Check";
 
 const Auth = () => {
+  const [register, setRegister] = React.useState(false);
   return (
     <div className="auth">
-      <div className="auth__container">
-        <h2>Войти или создать профиль</h2>
-        <input type="text" placeholder="username" />
-        <input type="text" placeholder="password" />
-        <button>Войти</button>
-        <p>
-          <CheckIcon /> <span>Соглашаюсь</span> с правилами пользования торговой
-          площадкой <span>и</span> возврата
-        </p>
-      </div>
+      <form className="auth__container">
+        <h2>{register === false ? "Войти" : "Регистрация"}</h2>
+        <input type="email" placeholder="email" />
+        {register && <input type="email" placeholder="email" />}
+        <input type="password" placeholder="password" />
+        <button>{register === false ? "Вход" : "Создать"}</button>
+        <div>
+          <p>
+            <CheckIcon /> <span>Соглашаюсь</span> с правилами пользования
+            торговой площадкой <span>и</span> возврата
+          </p>
+          <div className="isRegister" onClick={() => setRegister(!register)}>
+            {register === false ? "Нет аккаунта ?" : "Уже есть аккаунт ?"}
+          </div>
+        </div>
+      </form>
     </div>
   );
 };
