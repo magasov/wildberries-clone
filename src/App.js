@@ -3,6 +3,8 @@ import React from "react";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import Auth from "./pages/Auth/Auth";
+import { Route, Routes } from "react-router-dom";
+import Home from "./pages/Home/Home";
 
 function App() {
   const [user, setUser] = React.useState({});
@@ -14,7 +16,10 @@ function App() {
   return (
     <>
       <Header user={user} setUser={setUser} />
-      <Auth user={user} setUser={setUser} />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/auth" element={<Auth user={user} setUser={setUser} />} />
+      </Routes>
       <Footer />
     </>
   );

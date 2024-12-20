@@ -169,7 +169,7 @@ const Header = ({ user, setUser }) => {
                     </span>
                     Адреса
                   </Link>
-                  <Link to="/">
+                  <Link to="/auth">
                     <span>
                       <PersonIcon />
                     </span>
