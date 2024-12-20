@@ -10,7 +10,7 @@ import CreditCardIcon from "@mui/icons-material/CreditCard";
 import ShopIcon from "@mui/icons-material/Shop";
 import AccountBalanceWalletIcon from "@mui/icons-material/AccountBalanceWallet";
 
-const PopupProfile = ({ user, setUser }) => {
+const PopupProfile = ({ user, setUser, logOutUser }) => {
   return (
     <div className="popupProfile">
       <div className="popupProfile__main">
@@ -45,7 +45,7 @@ const PopupProfile = ({ user, setUser }) => {
           </div>
           <hr />
           <div className="exit">
-            <p>Выйти</p>
+            <p onClick={() => logOutUser()}>Выйти</p>
           </div>
         </div>
       </div>

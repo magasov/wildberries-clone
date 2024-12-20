@@ -16,6 +16,12 @@ const Header = ({ user, setUser }) => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [popupPerson, setPopupPerson] = React.useState(false);
 
+  const logOutUser = () => {
+    localStorage.removeItem("user");
+    setPopupPerson(false);
+    setUser({});
+  };
+
   const handleMouseOver = () => {
     setPopupPerson(true);
   };
@@ -191,7 +197,11 @@ const Header = ({ user, setUser }) => {
                   onMouseLeave={handleMouseOut}
                   className="popup-profile-wrapper"
                 >
-                  <PopupProfile user={user} setUser={setUser} />
+                  <PopupProfile
+                    user={user}
+                    logOutUser={logOutUser}
+                    setUser={setUser}
+                  />
                 </div>
               )}
             </div>
