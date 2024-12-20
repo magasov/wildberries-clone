@@ -7,10 +7,23 @@ import PhotoCameraIcon from "@mui/icons-material/PhotoCamera";
 import PersonIcon from "@mui/icons-material/Person";
 import LocalGroceryStoreIcon from "@mui/icons-material/LocalGroceryStore";
 import MenuIcon from "@mui/icons-material/Menu";
+import FavoriteIcon from "@mui/icons-material/Favorite";
+import LocalShippingIcon from "@mui/icons-material/LocalShipping";
+import PopupProfile from "../popupProfile/PopupProfile";
 
 const Header = ({ user, setUser }) => {
   const [currentCity, setCurrentCity] = useState("Загрузка...");
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const [popupPerson, setPopupPerson] = React.useState(false);
+
+  const handleMouseOver = () => {
+    setPopupPerson(true);
+  };
+
+  const handleMouseOut = () => {
+    setPopupPerson(false);
+  };
+
   const [cities, setCities] = useState([
     "Москва",
     "Санкт-Петербург",
@@ -18,7 +31,6 @@ const Header = ({ user, setUser }) => {
     "Новосибирск",
     "Екатеринбург",
   ]);
-  console.log("данные с конст", user);
 
   // Функция для получения города по IP
   useEffect(() => {
@@ -118,28 +130,70 @@ const Header = ({ user, setUser }) => {
               </span>
             </div>
             <div className="header__navbars">
-              <Link to="/">
-                <span>
-                  <PlaceIcon />
-                </span>
-                Адреса
-              </Link>
               {user.email ? (
-                <div>{user.name}</div>
+                <>
+                  <Link to="/">
+                    <span>
+                      <LocalShippingIcon />
+                    </span>
+                    Доставки
+                  </Link>
+                  <Link to="/">
+                    <span>
+                      <FavoriteIcon />
+                    </span>
+                    Избранное
+                  </Link>
+                  <Link
+                    onMouseOver={handleMouseOver}
+                    onMouseOut={handleMouseOut}
+                    to="/"
+                  >
+                    <span>
+                      <PersonIcon />
+                    </span>
+                    Профиль
+                  </Link>
+                  <Link to="/">
+                    <span>
+                      <LocalGroceryStoreIcon />
+                    </span>
+                    Корзина
+                  </Link>
+                </>
               ) : (
-                <Link to="/">
-                  <span>
-                    <PersonIcon />
-                  </span>
-                  Войти
-                </Link>
+                <>
+                  <Link to="/">
+                    <span>
+                      <PlaceIcon />
+                    </span>
+                    Адреса
+                  </Link>
+                  <Link to="/">
+                    <span>
+                      <PersonIcon />
+                    </span>
+                    Войти
+                  </Link>
+                  <Link to="/">
+                    <span>
+                      <LocalGroceryStoreIcon />
+                    </span>
+                    Корзина
+                  </Link>
+                </>
               )}
-              <Link to="/">
-                <span>
-                  <LocalGroceryStoreIcon />
-                </span>
-                Корзина
-              </Link>
+
+              {/* Всплывающее окно профиля */}
+              {popupPerson && (
+                <div
+                  onMouseEnter={handleMouseOver}
+                  onMouseLeave={handleMouseOut}
+                  className="popup-profile-wrapper"
+                >
+                  <PopupProfile user={user} setUser={setUser} />
+                </div>
+              )}
             </div>
           </div>
         </div>

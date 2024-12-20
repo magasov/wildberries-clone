@@ -1,0 +1,85 @@
+.popupProfile {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    padding: 10px 0;
+
+    &__main {
+        width: 300px;
+        background: #fff;
+        border-radius: 12px;
+        padding: 20px;
+
+        &-head {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            
+            img {
+                width: 40px;
+                height: 40px;
+                object-fit: cover;
+                border-radius: 50%;
+            }
+
+            p {
+                font-weight: 600;
+                display: flex;
+                align-items: center;
+                cursor: pointer;
+
+                &:hover {
+                    color: #A73AFD;
+                   
+                }
+
+                svg {
+                    font-size: 17px;
+                    position: relative;
+                    top: 2px;
+
+                
+                }
+            }
+        }
+
+        &-main {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+
+            .main_profile {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                margin-top: 20px;
+
+                p {
+                    display: flex;
+                    gap: 10px;
+                    cursor: pointer;
+                    color: #8b8c8d;
+                    font-weight: 500;
+
+                    span {
+                        position: absolute;
+                        right: 20px;
+                        font-weight: 700;
+                    }
+
+                    &:hover {
+                        color: #A73AFD;
+                    }
+                }
+            }
+
+            .exit {
+                color: #8b8c8d;
+                font-weight: 600;
+                cursor: pointer;
+            }
+            
+        }
+    }
+}
