@@ -5,6 +5,7 @@ import Footer from "./components/Footer/Footer";
 import Auth from "./pages/Auth/Auth";
 import { Route, Routes } from "react-router-dom";
 import Home from "./pages/Home/Home";
+import AddProduct from "./pages/AddProduct/AddProduct";
 
 function App() {
   const [user, setUser] = React.useState({});
@@ -17,7 +18,11 @@ function App() {
     <>
       <Header user={user} setUser={setUser} />
       <Routes>
-        <Route path="/" element={<Home user={user} setUser={setUser} />} />
+        <Route path="/" element={<Home />} />
+        <Route
+          path="/addproduct"
+          element={<AddProduct user={user} setUser={setUser} />}
+        />
         <Route path="/auth" element={<Auth user={user} setUser={setUser} />} />
       </Routes>
       <Footer />

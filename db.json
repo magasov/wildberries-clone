@@ -54,6 +54,20 @@
           "description": "123цйу",
           "price": 123,
           "createdAt": "2024-12-20T16:16:30.554Z"
+        },
+        {
+          "title": "qweq",
+          "description": "weqwe",
+          "price": 123,
+          "prices": 1234,
+          "createdAt": "2024-12-20T16:39:57.391Z"
+        },
+        {
+          "title": "67rftyurtyu",
+          "description": "yedryerew",
+          "price": 32,
+          "prices": 323644,
+          "createdAt": "2024-12-20T16:40:53.895Z"
         }
       ],
       "id": 8

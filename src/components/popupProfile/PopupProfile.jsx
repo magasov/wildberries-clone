@@ -9,8 +9,16 @@ import SellIcon from "@mui/icons-material/Sell";
 import CreditCardIcon from "@mui/icons-material/CreditCard";
 import ShopIcon from "@mui/icons-material/Shop";
 import AccountBalanceWalletIcon from "@mui/icons-material/AccountBalanceWallet";
+import EmojiEmotionsIcon from "@mui/icons-material/EmojiEmotions";
+import { useNavigate } from "react-router-dom";
 
 const PopupProfile = ({ user, setUser, logOutUser }) => {
+  const navigate = useNavigate();
+  const linkProdavec = () => {
+    navigate("/addproduct");
+    window.location.reload();
+  };
+
   return (
     <div className="popupProfile">
       <div className="popupProfile__main">
@@ -31,6 +39,9 @@ const PopupProfile = ({ user, setUser, logOutUser }) => {
             </p>
             <p>
               <SellIcon /> Любимые бренды
+            </p>
+            <p onClick={() => linkProdavec()}>
+              <EmojiEmotionsIcon /> Быть продавцом
             </p>
             <p>
               <LocalShippingIcon /> Доставки
