@@ -48,7 +48,7 @@ const Footer = () => {
           </div>
           <div className="footer__top">
             <p>
-              © Wildberries 2004–2024. Все права защищены. <br />
+              © Wildberies 2004–2024. Все права защищены. <br />
               Применяются <span>рекомендательные технологии</span>
             </p>
             <ul>

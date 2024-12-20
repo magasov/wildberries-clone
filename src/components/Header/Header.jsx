@@ -97,8 +97,8 @@ const Header = () => {
                 </ul>
               )}
               <div className="header__head_div">
-                <Link to="/">Продавайте на Wildberries</Link>
-                <Link to="/">Работа в Wildberries</Link>
+                <Link to="/">Продавайте на Wildberies</Link>
+                <Link to="/">Работа в Wildberies</Link>
               </div>
               <div className="header__head_priceLanguage">RUB</div>
             </div>
@@ -111,7 +111,7 @@ const Header = () => {
               <MenuIcon />
             </div>
             <div className="header__search">
-              <input type="text" placeholder="Найти на Wildberries" />
+              <input type="text" placeholder="Найти на Wildberies" />
               <span className="header__search-photo">
                 <PhotoCameraIcon />
               </span>
