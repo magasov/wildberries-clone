@@ -41,6 +41,22 @@
       "password": "$2a$10$coPbWzvL49CSZbTfOBKUs.30GnuFJw3DU..l3baD6sUuDde2bDMci",
       "name": "Админ",
       "id": 7
+    },
+    {
+      "email": "zurab@mail.ru",
+      "password": "$2a$10$j/JU0MnzTHFM4ISAA9L7y.h2Umg2zwAeJzkQ3zKFXip7asBEwBZ8O",
+      "name": "zurab",
+      "balance": 1000,
+      "avatar": "",
+      "products": [
+        {
+          "title": "213",
+          "description": "123цйу",
+          "price": 123,
+          "createdAt": "2024-12-20T16:16:30.554Z"
+        }
+      ],
+      "id": 8
     }
   ]
 }

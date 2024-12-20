@@ -37,7 +37,7 @@ const PopupProfile = ({ user, setUser, logOutUser }) => {
             </p>
             <p>
               <AccountBalanceWalletIcon /> WB Кошелёк
-              <span>0 ₽</span>
+              <span>{user.balance || 0} ₽</span>
             </p>
             <p>
               <CreditCardIcon /> Способы оплаты
