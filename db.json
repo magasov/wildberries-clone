@@ -1,0 +1,46 @@
+{
+  "users": [
+    {
+      "email": "77aushev@mail.ru",
+      "password": "$2a$10$pUxZ1z.IIs3iwmJQUdGUle1Fuv23JOaaSt07RqdLWmHbgzx947Sze",
+      "name": "Maga",
+      "id": 1
+    },
+    {
+      "email": "77aushev@mail.coim",
+      "password": "$2a$10$e9AUN4IKG7.vKTj5F8Xjlu1EwopDkRVAogmuWWbDrXIONOK2si4vG",
+      "name": "muhammad",
+      "id": 2
+    },
+    {
+      "email": "uusaushev@asdsad.asdasd",
+      "password": "$2a$10$EH0lDEdkqyvKo96bx12D5ubKsvExLxyBnsYLmdgNVULhkj5Yjg9wu",
+      "name": "ds2qsadasd",
+      "id": 3
+    },
+    {
+      "email": "77aushevasdasd@asdasd",
+      "password": "$2a$10$kNpvZ3LqJG7EsCn4Hk8cb.DwwrPSgzFa.R.YcA7oDCPFCe.KY4YrK",
+      "name": "SAdasd",
+      "id": 4
+    },
+    {
+      "email": "muhammad@aushev",
+      "password": "$2a$10$cAVQpIO/GimeBBnCAjLN1u06/YO/PeNua3L3zfJLadrGhMBBOzylC",
+      "name": "asd",
+      "id": 5
+    },
+    {
+      "email": "aushev@auscheqwe.qwe",
+      "password": "$2a$10$8fmK6mV6rzFWyVZJsK2XxODYdiy1Hlz4pudFANLatMRWh7hEZY1Xe",
+      "name": "adminqwe",
+      "id": 6
+    },
+    {
+      "email": "test@test.ru",
+      "password": "$2a$10$coPbWzvL49CSZbTfOBKUs.30GnuFJw3DU..l3baD6sUuDde2bDMci",
+      "name": "test",
+      "id": 7
+    }
+  ]
+}

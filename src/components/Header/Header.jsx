@@ -8,7 +8,7 @@ import PersonIcon from "@mui/icons-material/Person";
 import LocalGroceryStoreIcon from "@mui/icons-material/LocalGroceryStore";
 import MenuIcon from "@mui/icons-material/Menu";
 
-const Header = () => {
+const Header = ({ user, setUser }) => {
   const [currentCity, setCurrentCity] = useState("Загрузка...");
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [cities, setCities] = useState([
@@ -18,6 +18,7 @@ const Header = () => {
     "Новосибирск",
     "Екатеринбург",
   ]);
+  console.log("данные с конст", user);
 
   // Функция для получения города по IP
   useEffect(() => {
@@ -123,12 +124,16 @@ const Header = () => {
                 </span>
                 Адреса
               </Link>
-              <Link to="/">
-                <span>
-                  <PersonIcon />
-                </span>
-                Войти
-              </Link>
+              {user.email ? (
+                <div>{user.name}</div>
+              ) : (
+                <Link to="/">
+                  <span>
+                    <PersonIcon />
+                  </span>
+                  Войти
+                </Link>
+              )}
               <Link to="/">
                 <span>
                   <LocalGroceryStoreIcon />

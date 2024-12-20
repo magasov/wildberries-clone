@@ -7,7 +7,11 @@
     "@emotion/styled": "^11.14.0",
     "@mui/icons-material": "^6.2.1",
     "@mui/material": "^6.2.1",
+    "axios": "^1.7.9",
+    "concurrently": "^9.1.0",
     "cra-template": "1.2.0",
+    "json-server": "^0.17.4",
+    "json-server-auth": "2.1.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-router-dom": "^7.0.2",
@@ -16,6 +20,9 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "server": "json-server-auth --watch db.json --port 8080",
+    "dev": "concurrently \"npm run start\" \"npm run server\" ",
+    "yarn:dev": "concurrently \"yarn start\" \"yarn server\" ",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
