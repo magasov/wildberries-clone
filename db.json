@@ -1,76 +1,43 @@
 {
   "users": [
     {
-      "email": "77aushev@mail.ru",
-      "password": "$2a$10$pUxZ1z.IIs3iwmJQUdGUle1Fuv23JOaaSt07RqdLWmHbgzx947Sze",
-      "name": "Maga",
-      "id": 1
-    },
-    {
-      "email": "77aushev@mail.coim",
-      "password": "$2a$10$e9AUN4IKG7.vKTj5F8Xjlu1EwopDkRVAogmuWWbDrXIONOK2si4vG",
-      "name": "muhammad",
-      "id": 2
-    },
-    {
-      "email": "uusaushev@asdsad.asdasd",
-      "password": "$2a$10$EH0lDEdkqyvKo96bx12D5ubKsvExLxyBnsYLmdgNVULhkj5Yjg9wu",
-      "name": "ds2qsadasd",
-      "id": 3
-    },
-    {
-      "email": "77aushevasdasd@asdasd",
-      "password": "$2a$10$kNpvZ3LqJG7EsCn4Hk8cb.DwwrPSgzFa.R.YcA7oDCPFCe.KY4YrK",
-      "name": "SAdasd",
-      "id": 4
-    },
-    {
-      "email": "muhammad@aushev",
-      "password": "$2a$10$cAVQpIO/GimeBBnCAjLN1u06/YO/PeNua3L3zfJLadrGhMBBOzylC",
-      "name": "asd",
-      "id": 5
-    },
-    {
-      "email": "aushev@auscheqwe.qwe",
-      "password": "$2a$10$8fmK6mV6rzFWyVZJsK2XxODYdiy1Hlz4pudFANLatMRWh7hEZY1Xe",
-      "name": "adminqwe",
-      "id": 6
+      "email": "admin@admin.ru",
+      "password": "$2a$10$3zAWL66PU7IVAsA/LRkKCezbWQ4KRYt7d4grNVDFEMaNEjfQJJO4.",
+      "name": "Админ",
+      "balance": 9999999,
+      "avatar": "",
+      "id": 10
     },
     {
       "email": "test@test.ru",
-      "password": "$2a$10$coPbWzvL49CSZbTfOBKUs.30GnuFJw3DU..l3baD6sUuDde2bDMci",
-      "name": "Админ",
-      "id": 7
-    },
-    {
-      "email": "zurab@mail.ru",
-      "password": "$2a$10$j/JU0MnzTHFM4ISAA9L7y.h2Umg2zwAeJzkQ3zKFXip7asBEwBZ8O",
-      "name": "zurab",
+      "password": "$2a$10$7hLd9hywuOl9JfMgIqwQGejH8Em/kIcEBTHHy1us9jaFCqwPYLJ0i",
+      "name": "test",
       "balance": 1000,
       "avatar": "",
-      "products": [
-        {
-          "title": "213",
-          "description": "123цйу",
-          "price": 123,
-          "createdAt": "2024-12-20T16:16:30.554Z"
-        },
-        {
-          "title": "qweq",
-          "description": "weqwe",
-          "price": 123,
-          "prices": 1234,
-          "createdAt": "2024-12-20T16:39:57.391Z"
-        },
-        {
-          "title": "67rftyurtyu",
-          "description": "yedryerew",
-          "price": 32,
-          "prices": 323644,
-          "createdAt": "2024-12-20T16:40:53.895Z"
-        }
-      ],
-      "id": 8
+      "products": [],
+      "id": 11
+    }
+  ],
+  "products": [
+    {
+      "title": "RAVOX",
+      "description": "RGB лампа Закат с пультрм lorem lorem lorem RGB лампа Закат с пультрм lorem lorem lorem",
+      "price": 362,
+      "prices": 2245,
+      "createdAt": "2024-12-21T08:10:27.369Z",
+      "userId": 10,
+      "img": "https://basket-13.wbbasket.ru/vol1970/part197095/197095914/images/c516x688/1.webp",
+      "id": 1
+    },
+    {
+      "title": "Машина",
+      "description": "Семейная машина зураба и мадошки ",
+      "price": 2000,
+      "prices": 5000,
+      "createdAt": "2024-12-21T08:29:37.948Z",
+      "userId": 10,
+      "img": "https://i.pinimg.com/736x/36/ca/70/36ca708427eaaf0fb3168cb5a7494b44.jpg",
+      "id": 2
     }
   ]
 }

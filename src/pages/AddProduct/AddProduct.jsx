@@ -8,6 +8,7 @@ const AddProduct = ({ user, setUser }) => {
   const [description, setDescription] = useState("");
   const [price, setPrice] = useState("");
   const [prices, setPrices] = useState("");
+  const [imageUrl, setImageUrl] = useState(""); // Добавляем состояние для URL изображения
 
   const addProductHandler = async () => {
     if (!user || !user.id) {
@@ -22,18 +23,35 @@ const AddProduct = ({ user, setUser }) => {
         price: parseFloat(price),
         prices: parseFloat(prices),
         createdAt: new Date().toISOString(),
+        userId: user.id, // Связываем продукт с пользователем
+        img: imageUrl, // Добавляем URL изображения
       };
 
-      const res = await axios.patch(`/users/${user.id}`, {
-        products: [...user.products, newProduct],
-      });
+      // Добавляем продукт в коллекцию products
+      const res = await axios.post("/products", newProduct);
 
-      setUser(res.data);
-      localStorage.setItem("user", JSON.stringify(res.data));
+      // Обновляем локальное состояние пользователя
+      setUser((prevUser) => ({
+        ...prevUser,
+        products: [...(prevUser.products || []), res.data],
+      }));
+
+      // Обновляем локальное хранилище
+      localStorage.setItem(
+        "user",
+        JSON.stringify({
+          ...user,
+          products: [...(user.products || []), res.data],
+        })
+      );
+
+      // Очищаем поля ввода
       setTitle("");
       setDescription("");
       setPrice("");
       setPrices("");
+      setImageUrl(""); // Очищаем поле URL изображения
+
       alert("Продукт успешно добавлен!");
     } catch (err) {
       console.error(err);
@@ -71,6 +89,12 @@ const AddProduct = ({ user, setUser }) => {
               onChange={(e) => setPrices(e.target.value)}
             />
           </div>
+          <input
+            type="text"
+            placeholder="URL изображения"
+            value={imageUrl}
+            onChange={(e) => setImageUrl(e.target.value)} // Добавляем обработчик для URL изображения
+          />
           <button onClick={addProductHandler}>Добавить</button>
         </div>
       </div>

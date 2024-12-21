@@ -1,0 +1,117 @@
+.products {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-row-gap: 30px;
+    column-gap: 25px;
+    margin-bottom: 40px;
+
+    .product {
+        width: 215px;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+
+        img {
+            width: 100%;
+            border-radius: 12px;
+            height: 286px
+        }
+
+        &__price {
+            width: 100%;
+            display: flex;
+            gap: 10px;
+            align-items: center;
+
+           h3 {
+            &:first-child {
+                color: rgb(233, 56, 56);
+                font-size: 20px;
+                font-weight: 700;
+                display: flex;
+                align-items: center;
+                gap: 2px;
+                img {
+                    width: 15px;
+                    height: 15px;
+                }
+            }
+            
+            &:last-child {
+                font-size: 15px;
+                color: rgb(126, 126, 126);
+                font-weight: 500;
+                text-decoration: line-through;
+            }
+            
+           }
+        }
+
+        &__desc {
+            display: flex;
+            align-items: center;
+            font-size: 14px;
+            gap: 5px;
+            font-weight: 600;
+
+            p {
+                &:last-child {
+                    color: #888;
+                    width: 100%;
+                    white-space: nowrap; 
+                    overflow: hidden; 
+                    text-overflow: ellipsis; 
+                }
+            }
+
+            
+        }
+
+        &__rating {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            font-size: 14px;
+            font-weight: 600;
+
+            p {
+                display: flex;
+                align-items: center;
+
+                svg {
+                    color: gold;
+                    font-size: 20px;
+                }
+
+                &:last-child {
+                    color: #888;
+                }
+            }
+        }
+
+        button {
+            height: 35px;
+            border-radius: 12px;
+            border: 0;
+            background: #A73AFD;
+            color: #fff;
+            font-size: 15px;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            justify-content: center;
+            cursor: pointer;
+            position: relative;
+            top: 10px;
+
+            svg {
+                font-size: 18px;
+            }
+            
+            &:hover {
+                opacity: .9;
+            }
+        }
+    }
+}

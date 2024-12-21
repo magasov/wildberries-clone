@@ -16,6 +16,7 @@
     "react-dom": "^19.0.0",
     "react-router-dom": "^7.0.2",
     "react-scripts": "5.0.1",
+    "swiper": "^11.1.15",
     "sass": "^1.83.0"
   },
   "scripts": {
