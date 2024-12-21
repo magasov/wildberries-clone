@@ -5,7 +5,7 @@
       "password": "$2a$10$3zAWL66PU7IVAsA/LRkKCezbWQ4KRYt7d4grNVDFEMaNEjfQJJO4.",
       "name": "Админ",
       "balance": 9999999,
-      "avatar": "",
+      "avatar": "https://i.ytimg.com/vi/Af1u0fuev7g/maxresdefault.jpg",
       "id": 10
     },
     {
@@ -16,6 +16,24 @@
       "avatar": "",
       "products": [],
       "id": 11
+    },
+    {
+      "email": "amarat@mail.ru",
+      "password": "$2a$10$8kiFiUeTvMshe/47s5XVC.STNMK4G/L8lGKVYtg9VYbDdJ8AFbaNa",
+      "name": "Makhumud",
+      "balance": 1000,
+      "avatar": "",
+      "products": [],
+      "id": 12
+    },
+    {
+      "email": "test2@test.ru",
+      "password": "$2a$10$UfY/v.xnRfKC4WzpAMx/8.XIf3jWKRCWDbuOSd1PQb4jDb9NtI7F2",
+      "name": "test2",
+      "balance": 1000,
+      "avatar": "",
+      "products": [],
+      "id": 13
     }
   ],
   "products": [
@@ -38,6 +56,76 @@
       "userId": 10,
       "img": "https://i.pinimg.com/736x/36/ca/70/36ca708427eaaf0fb3168cb5a7494b44.jpg",
       "id": 2
+    },
+    {
+      "title": "BWM",
+      "description": "ф90 идеально состояние ",
+      "price": 1000,
+      "prices": 2000,
+      "createdAt": "2024-12-21T10:16:48.671Z",
+      "userId": 10,
+      "img": "https://i.ytimg.com/vi/Af1u0fuev7g/maxresdefault.jpg",
+      "id": 3
+    },
+    {
+      "title": "Куртка",
+      "description": "Теплая, стильная",
+      "price": 5000,
+      "prices": 6000,
+      "createdAt": "2024-12-21T10:26:14.792Z",
+      "userId": 10,
+      "img": "/zurab.jpeg",
+      "id": 4
+    },
+    {
+      "title": "Куртка",
+      "description": "Качество😍, четкая",
+      "price": 3000,
+      "prices": 3520,
+      "createdAt": "2024-12-21T10:26:14.792Z",
+      "userId": 10,
+      "img": "/djabrail.jpeg",
+      "id": 4
+    },
+    {
+      "title": "iPhone",
+      "description": "Новый айфон 14 про макс",
+      "price": 9900,
+      "prices": 10000,
+      "createdAt": "2024-12-21T10:40:08.193Z",
+      "userId": 10,
+      "img": "https://static.insales-cdn.com/files/1/2833/23030545/original/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA_%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0_2022-09-24_%D0%B2_19.27.40_cf92845f439acdbcbcbe841e1ad1c131.png",
+      "id": 5
+    },
+    {
+      "title": "LUXO",
+      "description": "Чехол на айфон 15 про с magsafe",
+      "price": 928,
+      "prices": 1990,
+      "createdAt": "2024-12-21T10:45:54.874Z",
+      "userId": 10,
+      "img": "https://basket-16.wbbasket.ru/vol2435/part243501/243501987/images/c516x688/1.webp",
+      "id": 6
+    },
+    {
+      "title": "Часы",
+      "description": "Умные смарт часы новые",
+      "price": 610,
+      "prices": 5260,
+      "createdAt": "2024-12-21T11:04:55.886Z",
+      "userId": 10,
+      "img": "https://basket-14.wbbasket.ru/vol2188/part218842/218842859/images/c516x688/1.webp",
+      "id": 7
+    },
+    {
+      "title": "AlexGames",
+      "description": "Игра настольная, крутая",
+      "price": 182,
+      "prices": 1595,
+      "createdAt": "2024-12-21T11:08:57.241Z",
+      "userId": 10,
+      "img": "https://basket-03.wbbasket.ru/vol310/part31071/31071277/images/c516x688/1.webp",
+      "id": 8
     }
   ]
 }

@@ -18,13 +18,17 @@ const PopupProfile = ({ user, setUser, logOutUser }) => {
     navigate("/addproduct");
     window.location.reload();
   };
+  const linkMe = () => {
+    navigate("/myprofile");
+    window.location.reload();
+  };
 
   return (
     <div className="popupProfile">
       <div className="popupProfile__main">
         <div className="popupProfile__main-head">
-          <img src={avatar} alt="avatar" />
-          <p>
+          <img src={user.avatar || avatar} alt="avatar" />
+          <p onClick={() => linkMe()}>
             {user.name} <ChevronRightIcon />
           </p>
         </div>
