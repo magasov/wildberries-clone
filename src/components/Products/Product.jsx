@@ -5,24 +5,32 @@ import scidka from "../../assets/icons/scidka.png"
 import StarIcon from '@mui/icons-material/Star';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import axios from '../../axios.js';
+import Loader from '../Loader/Loader.jsx';
 
 const Product = () => {
   const [products, setProducts] = React.useState([])
+  const [loading, setLoading] = React.useState(true)
   React.useEffect(() => { 
     const fetchProducts = async () => {
       try {
-        const res = await axios.get("/products")
+        await new Promise((resolve) => setTimeout(resolve, 1000));
+
+        const res = await axios.get("/products");
         setProducts(res.data);
-        
+        setLoading(false);
       } catch (error) {
         console.log(error);
+        setLoading(false); 
       }
-    }
+    };
     fetchProducts()
   }, [])
 
   return (
     <div className="container">
+      {
+        loading && <Loader />
+      }
       <div className="products">
           {
             products.map((obj) => (
