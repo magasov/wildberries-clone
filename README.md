@@ -10,7 +10,7 @@
     <img src="https://camo.githubusercontent.com/e84d110dc8fc6125b9138856352724ba0f8f6b86ec6ac91961669d407fd71e24/68747470733a2f2f63646e2d69636f6e732d706e672e666c617469636f6e2e636f6d2f3531322f353936382f353936383335382e706e67" alt="scss" width="28x" />
   </div>
 
-  <h3 align="center">Clone WB | by [magasov](https://github.com/magasov)</h3>
+  <h3 align="center">Clone WB</h3>
 
    <div align="center">
      Это клонированная версия популярного интернет-магазина Wildberries, созданная с целью изучения и применения различных концепций и технологий, связанных с разработкой пользовательских интерфейсов на React.
