@@ -87,7 +87,7 @@ header {
         height: 58px;
     
         &__menu {
-            width: 58px;
+            min-width: 58px;
             height: 58px;
             background: transparent;
             border: 1px solid rgb(155, 155, 155);

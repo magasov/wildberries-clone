@@ -7,6 +7,7 @@ import Home from "./pages/Home/Home";
 import AddProduct from "./pages/AddProduct/AddProduct";
 import MyProfile from "./pages/myProfile/MyProfile";
 import Admin from "./pages/Admin/Admin";
+import AllUser from "./pages/Admin/AllUser";
 import NotFound from "./pages/NotFound/NotFound";
 
 function App() {
@@ -42,9 +43,9 @@ function App() {
           }
         />
         <Route
-          path="/admin/user"
+          path="/admin/users"
           element={
-            isAdmin ? <Admin user={user} setUser={setUser} /> : <NotFound />
+            isAdmin ? <AllUser user={user} setUser={setUser} /> : <NotFound />
           }
         />
         <Route path="*" element={<NotFound />} />
