@@ -62,7 +62,7 @@ const MyProfile = ({ user, setUser }) => {
               <div className="myProfile__right-one-div">
                 <div>
                   <p>
-                    <CreditScoreIcon /> {user.balance} || 0 ₽
+                    <CreditScoreIcon /> {user.balance || 0} ₽
                   </p>
                   <span>WB Кошелёк</span>
                 </div>
