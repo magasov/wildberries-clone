@@ -41,7 +41,6 @@
 
     &__left {
         width: 500px;
-        height: 522px;
         background: #fff;
         border-radius: 15px;
         padding: 20px;
@@ -81,6 +80,10 @@
                 padding: 10px;
                 color: #777;
                 font-weight: 500;
+
+                b {
+                    color: #333;
+                }
                 
                 &:first-child {
                     background: #F6F6F9;
@@ -92,10 +95,140 @@
                 }
             }
         }
+
+        .profile_finance {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            color: #868695;
+            font-size: 14px;
+            line-height: 20px;
+            
+            div {
+                height: 42px;
+                border-radius: 12px;
+                background: #f6f6f9;
+                display: flex;
+                align-items: center;
+                padding: 0 10px;
+                gap: 10px;
+                color: #242424;
+                font-weight: 600;
+                cursor: pointer;
+
+                svg {
+                    color: #b9b9c1;
+                }
+            }
+        }
     }
 
     &__right {
         width: 100%;
-        background: green;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        &-one {
+            display: flex;
+            gap: 10px;
+
+            &-div {
+                flex: 1;
+                background: #fff;
+                border-radius: 20px;
+                padding: 20px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                font-weight: 500;
+                transition: .3s ease;
+
+                &:hover {
+                    box-shadow: rgba(255, 3, 242, 0.2) 0px 8px 24px;
+                    cursor: pointer;
+                }
+
+                div {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                    color: #888;
+
+                    p {
+                        font-size: 20px;
+                        font-weight: 700;
+                        display: flex;
+                        align-items: center;
+                        gap: 8px;
+                        color: #242424;
+
+                        &:hover {
+                            color: #A73AFD;
+                            cursor: pointer;
+                        }
+
+                        svg  {
+                            background: linear-gradient(63deg, #ed27cb -7.68%, #7723f5 75.45%);
+                            padding: 5px;
+                            border-radius: 8px;
+                            color: #fff;
+                        }
+                    }
+                }
+
+                button {
+                    border: 0;
+                    letter-spacing: 0;
+                    text-align: center;
+                    cursor: pointer;
+                    color: #a73afd;
+                    border-radius: 12px;
+                    padding: 10px 20px;
+                    display: flex;
+                    font-size: 16px;
+                    font-weight: 700;
+                    line-height: 22px;
+                    background: #a83afd1c;
+                }
+
+                svg {
+                    color: #777;
+                    cursor: pointer;
+                }
+
+                .lk_icons {
+                    svg {
+                        color: #a83afd38;
+                        font-size: 30px;
+                    }
+                }
+            }
+        }
+
+        &-two {
+           display: flex;
+           gap: 10px;
+
+            div {
+                flex: 1;
+                border-radius: 20px;
+                padding: 20px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                font-weight: 500;
+                transition: .3s ease;
+            }
+
+            &-img {
+                background: #ff4fee;
+                color: #fff;
+                
+                h3 {
+
+                }
+            }
+        }
     }
 }
