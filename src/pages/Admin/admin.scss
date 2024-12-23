@@ -1,0 +1,136 @@
+.admin {
+    min-height: calc(100vh - 528px);
+    margin-bottom: 60px;
+
+    &__head {
+        margin: 30px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+       &-left {
+        h1 {
+            font-size: 40px;
+            color: #0F1A24;
+
+            span {
+                color: #A73AFD;
+            }
+        }
+
+        p {
+            font-size: 14px;
+            color: #687082;
+        }
+       }
+
+       &-right {
+        display: flex;
+        gap: 20px;
+
+        a {
+            position: relative;
+
+            &:hover {
+                color: #A73AFD;
+            }
+            &::after {
+                content: "";
+                position: absolute;
+                bottom: -10px;
+                left: 50%;
+                width: 0;
+                height: 2px;
+                background-color: #A73AFD;
+                transform: translateX(-50%);
+                transition: width .2s ease-in-out;
+              }
+      
+              &:hover::after {
+                width: 100%;
+              }
+        }
+       }
+
+    }
+
+    &__main {
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+
+        &-header {
+                border: 1px dashed #D3D3D3;
+                display: flex;
+                border-radius: 8px;
+
+            ul {
+                flex: 1;
+                padding: 20px;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+
+                li {
+                    font-weight: 600;
+
+                    span {
+                        font-size: 16px;
+                        color: #687082;
+                        font-weight: 400;
+                    }
+                }
+
+                .childrenAdminPanel {
+                    font-size: 24px;
+                }
+            }
+        }
+
+        &-section {
+            display: flex;
+            justify-content: space-between;
+            gap: 14px;
+
+            &-div {
+                flex: 1;
+                padding: 20px;
+                border: 1px dashed #D3D3D3;
+                border-radius: 8px;
+
+                h3 {
+                    font-size: 16px;
+                    margin-bottom: 27px;
+                }
+
+                .gap__admin-panel {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                    .admin_profile-all {
+                        display: flex;
+                        justify-content: space-between;
+    
+                        .userDataInfo {
+                            display: flex;
+                            align-items: center;
+                            gap: 10px;
+                            .userDataAvatar {
+                                width: 36px;
+                                height: 36px;
+                                border-radius: 50%;
+                                overflow: hidden;
+
+                                img {
+                                    width: 100%;
+                                    height: 100%;
+                                    object-fit: cover;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -6,7 +6,8 @@
       "name": "Админ",
       "balance": 9999999,
       "avatar": "https://i.ytimg.com/vi/Af1u0fuev7g/maxresdefault.jpg",
-      "id": 10
+      "id": 10,
+      "lastLoginDate": "2024-12-23T15:22:03.870Z"
     },
     {
       "email": "test@test.ru",
@@ -34,6 +35,36 @@
       "avatar": "",
       "products": [],
       "id": 13
+    },
+    {
+      "email": "muhammad@aushev.ru",
+      "password": "$2a$10$FXhKUVGg68Jc/E3WWiZ/MeU4w6lWavDONXoTboT9TJWvCf92BGkny",
+      "name": "Мухаммад",
+      "balance": 1000,
+      "avatar": "",
+      "products": [],
+      "id": 14
+    },
+    {
+      "email": "testaushev@mail.ru",
+      "password": "$2a$10$GOeg1PpJnRnc8MfJ8qV9xOuYYgu.Sqv7Qo/QiYYUZuxU2lvNLfUuG",
+      "name": "names",
+      "balance": 1000,
+      "avatar": "",
+      "products": [],
+      "registrationDate": "2024-12-23T13:31:21.381Z",
+      "id": 15
+    },
+    {
+      "email": "test@test.test",
+      "password": "$2a$10$p9uY/OF7vnL6mOng.twmn.MSdr39Om25H.SP2cGROSzaTs1JCEwBe",
+      "name": "test",
+      "balance": 1000,
+      "avatar": "",
+      "products": [],
+      "registrationDate": "2024-12-23T13:56:46.000Z",
+      "lastLoginDate": "2024-12-23T15:21:44.271Z",
+      "id": 16
     }
   ],
   "products": [

@@ -15,8 +15,21 @@ const Auth = ({ user, setUser }) => {
         email: e.target[0].value,
         password: e.target[1].value,
       });
-      setUser(res.data.user);
-      localStorage.setItem("user", JSON.stringify(res.data.user));
+
+      const user = res.data.user;
+
+      const updatedUser = {
+        ...user,
+        lastLoginDate: new Date().toISOString(),
+      };
+
+      await axios.patch(`/users/${user.id}`, {
+        lastLoginDate: updatedUser.lastLoginDate,
+      });
+
+      setUser(updatedUser);
+      localStorage.setItem("user", JSON.stringify(updatedUser));
+
       navigate("/");
       e.target.reset();
     } catch (err) {
@@ -33,6 +46,8 @@ const Auth = ({ user, setUser }) => {
         balance: 1000,
         avatar: "",
         products: [],
+        registrationDate: new Date().toISOString(),
+        lastLoginDate: "",
       })
       .then((res) => {
         setUser(res.data.user);
