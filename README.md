@@ -66,6 +66,14 @@
 
 <img src="./src/assets/readme/lk.png" alt="lk">
 
+## 🌐 <a name="table">Admin dasboard</a>
+
+<img src="./src/assets/readme/dashboard.png" alt="dashboard">
+
+## 🌐 <a name="table">All user</a>
+
+<img src="./src/assets/readme/allUser.png" alt="allUser">
+
 ##
 
 > ⚠️ **Важно:** Оригинальный логотип защищён авторским правом.  
