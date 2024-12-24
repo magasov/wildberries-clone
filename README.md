@@ -28,6 +28,40 @@
 8. 🎨 Sass
 9. 🧩 Concurrently
 
+## <a name="table">Как начать</a>
+
+Убедитесь, что у вас установлен `Node.js`. Если нет, скачайте его с [официального сайта](https://nodejs.org/).
+
+### Установка
+
+1. Клонируйте репозиторий:
+   ```bash
+   git clone https://github.com/magasov/wildberries-clone.git
+   ```
+   ```bash
+    cd wildberries-clone
+   ```
+2. Установите зависимости:
+
+   ```bash
+   npm install
+   ```
+
+   или
+
+   ```bash
+    yarn add
+   ```
+
+3. Запуск приложения
+   ```bash
+   npm run dev
+   ```
+   или
+   ```bash
+    yarn yarn:dev
+   ```
+
 ## 🌐 <a name="table">Lk</a>
 
 <img src="./src/assets/readme/lk.png" alt="lk">
