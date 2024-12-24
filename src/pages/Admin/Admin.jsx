@@ -69,7 +69,9 @@ const Admin = () => {
             <p>Поздравляем, у вашего приложения появились пользователи!</p>
           </div>
           <div className="admin__head-right">
-            <Link to="/admin">Обзор</Link>
+            <Link to="/admin" style={{ color: "#a73afd" }}>
+              Обзор
+            </Link>
             <Link to="/admin/users">Пользователи</Link>
           </div>
         </div>

@@ -28,6 +28,30 @@
         cursor: pointer;
       }
     }
+
+    input {
+      border: 1px solid lightgray;
+      border-radius: 8px;
+      padding: 8px 20px;
+
+      &:focus {
+        box-shadow: 0 0 3px 1px #7723f5;
+        outline: none;
+      }
+    }
+
+    button {
+      color: #fff;
+      background: #7723f5;
+      padding: 10px;
+      border-radius: 8px;
+      cursor: pointer;
+      border: 0;
+
+      &:hover {
+        opacity: .8;
+      }
+    }
   }
 }
 

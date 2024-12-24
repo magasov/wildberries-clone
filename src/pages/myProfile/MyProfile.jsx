@@ -19,6 +19,7 @@ import LiveHelpIcon from "@mui/icons-material/LiveHelp";
 
 const MyProfile = ({ user, setUser }) => {
   const [popup, setPopup] = React.useState(false);
+
   return (
     <div className="background__profile">
       <div className="container">
@@ -152,8 +153,8 @@ const MyProfile = ({ user, setUser }) => {
               className="popup_close"
             />
             <h2>Личные данные</h2>
-            <input type="text" placeholder="Имя" />
-            <button>Сохранить</button>
+            <input type="text" placeholder="Новое имя" />
+            <button type="submit">Сохранить</button>
           </div>
         </form>
       )}
