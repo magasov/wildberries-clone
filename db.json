@@ -46,17 +46,6 @@
       "id": 14
     },
     {
-      "email": "test@test.test",
-      "password": "$2a$10$p9uY/OF7vnL6mOng.twmn.MSdr39Om25H.SP2cGROSzaTs1JCEwBe",
-      "name": "test",
-      "balance": 1000,
-      "avatar": "",
-      "products": [],
-      "registrationDate": "2024-12-23T13:56:46.000Z",
-      "lastLoginDate": "2024-12-23T15:21:44.271Z",
-      "id": 16
-    },
-    {
       "email": "vedzizhev77@gmail.com",
       "password": "$2a$10$XKvVOkT/Rb5XSiVR1IbVtOeyTcQSmZ7Sh74BTUvEb0KLMWAJCNiFu",
       "name": "Aushev",
@@ -128,7 +117,7 @@
       "createdAt": "2024-12-21T10:26:14.792Z",
       "userId": 10,
       "img": "/djabrail.jpeg",
-      "id": 4
+      "id": 5
     },
     {
       "title": "iPhone",
@@ -138,7 +127,7 @@
       "createdAt": "2024-12-21T10:40:08.193Z",
       "userId": 10,
       "img": "https://static.insales-cdn.com/files/1/2833/23030545/original/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA_%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0_2022-09-24_%D0%B2_19.27.40_cf92845f439acdbcbcbe841e1ad1c131.png",
-      "id": 5
+      "id": 6
     },
     {
       "title": "LUXO",
@@ -148,7 +137,7 @@
       "createdAt": "2024-12-21T10:45:54.874Z",
       "userId": 10,
       "img": "https://basket-16.wbbasket.ru/vol2435/part243501/243501987/images/c516x688/1.webp",
-      "id": 6
+      "id": 7
     },
     {
       "title": "Часы",
@@ -158,7 +147,7 @@
       "createdAt": "2024-12-21T11:04:55.886Z",
       "userId": 10,
       "img": "https://basket-14.wbbasket.ru/vol2188/part218842/218842859/images/c516x688/1.webp",
-      "id": 7
+      "id": 8
     },
     {
       "title": "AlexGames",
@@ -168,7 +157,7 @@
       "createdAt": "2024-12-21T11:08:57.241Z",
       "userId": 10,
       "img": "https://basket-03.wbbasket.ru/vol310/part31071/31071277/images/c516x688/1.webp",
-      "id": 8
+      "id": 9
     }
   ]
 }
