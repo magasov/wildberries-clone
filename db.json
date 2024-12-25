@@ -7,7 +7,7 @@
       "balance": 9999999,
       "avatar": "https://i.ytimg.com/vi/Af1u0fuev7g/maxresdefault.jpg",
       "id": 10,
-      "lastLoginDate": "2024-12-24T15:35:54.201Z"
+      "lastLoginDate": "2024-12-25T06:30:22.534Z"
     },
     {
       "email": "test@test.ru",
@@ -19,11 +19,11 @@
       "id": 11
     },
     {
-      "email": "amarat@mail.ru",
+      "email": "khutiev@mail.ru",
       "password": "$2a$10$8kiFiUeTvMshe/47s5XVC.STNMK4G/L8lGKVYtg9VYbDdJ8AFbaNa",
       "name": "Адам Хутиев",
       "balance": 1000,
-      "avatar": "",
+      "avatar": "https://ithub.ru/vardata/modules/news/files/1/322/news_file_322_64a444bd8afea.png",
       "products": [],
       "id": 12
     },
@@ -158,6 +158,46 @@
       "userId": 10,
       "img": "https://basket-03.wbbasket.ru/vol310/part31071/31071277/images/c516x688/1.webp",
       "id": 9
+    },
+    {
+      "title": "Часы",
+      "description": "Женские наручные кварцевые с браслетом в подарок",
+      "price": 2081,
+      "prices": 6772,
+      "createdAt": "2024-12-25T06:40:48.499Z",
+      "userId": 10,
+      "img": "https://basket-17.wbbasket.ru/vol2730/part273014/273014534/images/c516x688/1.webp",
+      "id": 10
+    },
+    {
+      "title": "Часы",
+      "description": "Смарт часы женские для андроид круглые iphone наручные",
+      "price": 4998,
+      "prices": 8070,
+      "createdAt": "2024-12-25T06:42:41.268Z",
+      "userId": 10,
+      "img": "https://basket-15.wbbasket.ru/vol2268/part226875/226875992/images/c516x688/1.webp",
+      "id": 11
+    },
+    {
+      "title": "Loro Piano",
+      "description": "Лоферы натуральная замша",
+      "price": 4258,
+      "prices": 10000,
+      "createdAt": "2024-12-25T06:45:51.067Z",
+      "userId": 10,
+      "img": "https://basket-15.wbbasket.ru/vol2368/part236800/236800668/images/c516x688/1.webp",
+      "id": 12
+    },
+    {
+      "title": "Наушники",
+      "description": "Беспроводные Air 2 для iPhone и Android",
+      "price": 995,
+      "prices": 6200,
+      "createdAt": "2024-12-25T06:54:26.581Z",
+      "userId": 10,
+      "img": "https://basket-10.wbbasket.ru/vol1388/part138834/138834549/images/c516x688/1.webp",
+      "id": 13
     }
   ]
 }
